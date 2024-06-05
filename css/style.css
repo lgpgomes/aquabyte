@@ -1,0 +1,358 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores */
+:root {
+    --primary-fill-color: #042042;
+    --primary-line-color: #fff;
+    --secondary-fill-color: #00ceff;
+    --tertiary-fill-color: #009dff;
+    --container-size-width: 77.7vw;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+    filter: hue-rotate(-5deg) brightness(1.05) contrast(1.15) grayscale(0.1);
+}
+
+.section {
+    background-color: var(--primary-fill-color);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.section_hero {
+    position: relative;
+    background-image: url("../img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_hero::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-image: linear-gradient(0deg, var(--primary-fill-color) 6.66%, transparent 66.6%);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section_hero_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.container {
+    max-width: 1000px;
+    width: var( --container-size-width); 
+    margin: 0 auto;
+}
+
+.glow_bubble {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--secondary-fill-color);
+    filter: blur(100px);
+    opacity: 0.777;
+    z-index: 9999;
+    margin: auto;
+}
+
+.bubble_1 {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 90%;
+}
+
+
+
+.hero_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_hero .hero_title_emphasis {
+    color: var(--secondary-fill-color);
+    font-weight: 600;
+    filter: brightness(0.9);
+}
+
+.section_hero .hero_title {
+    text-align: center;
+    font-size: 52px;
+    color:var(--primary-line-color);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-top: -69px;
+}
+
+.section_hero .hero_side_image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seaTurttleImage {
+    height: 100%;
+    position: absolute;
+    height: 333px;
+    width: auto;
+    margin-top: 33px;
+    margin-left: -33px;
+}
+
+/* Header */
+#logo {
+    display: flex;
+    font-weight: 100;
+    font-size: 18px;
+}
+#logo1 {
+    color: var(--primary-line-color);
+}
+
+#logo2 {
+    color: var(--secondary-fill-color);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: var(--primary-line-color);
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    margin-top: -60px;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    scale: 1.2;
+    z-index: -1;
+}
+
+.header_inner {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link_items { 
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.link_item { 
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.link_item a {
+    color: var(--primary-line-color);
+    text-decoration: none;
+}
+
+
+
+/*News*/
+#notice01 .item_news_content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#notice01 .news_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #C4170C;
+    height: 33px;
+}
+
+.news_logo, .news_icon {
+    width: 20px;
+}
+
+.items_news {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.item_news {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.item_news_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 393px;
+    width: 50%;
+    gap: 20px;
+}
+
+.item_news_description {
+    width: 50%;
+}
+
+.news_headline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news_title {
+    line-height: 1.2;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+.news_subtitle {
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 16px;
+    color: #bcbcbc;
+}
+
+.news_tag {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+
+/* MATERIAS */
+.materias {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--primary-line-color);
+}
+
+.materias h1 {
+    font-size: 36;
+    margin-bottom: 40px;
+}
+
+.materias .materias_desc p{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.materia_card {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    color: var(--primary-line-color);
+    margin-top: 50px;
+    transition: 0.4s;
+}
+
+.materia_content, .materia_image {
+    transition: 0.4s;
+}
+
+.materia_content:hover, .materia_image:hover {
+    transform: translateY(-10px);
+    scale: 1.05;
+}
+
+.materia_title {
+    font-weight: 900;
+    color: #00ceff;
+}
+
+.materia_content {
+    max-width: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.materia_image img {
+    width: 100%;
+    max-width: 700px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.materia_card .materia_src {
+    flex-wrap: wrap;
+    /* color: #07f89c; */
+    color: #00ceff;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#card_02 {
+    flex-direction: row-reverse;
+}
+
+#card_02 img {
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1300px) {
+    #card_02, .materia_card {
+        flex-direction: column;        
+    }
+    
+   #card_02 .materia_content, .materia_content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+   }
+    
+}
+/* MATERIAS */
