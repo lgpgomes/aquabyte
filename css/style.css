@@ -193,63 +193,104 @@ body {
 
 
 /*News*/
+#notice02 .news_logo {
+    filter: brightness(0) invert(1);
+    width: 90px;
+}
+
+#notice02 .news_header {
+    background-color: #009EDB;
+}
+
+#notice02 .item_news_content {
+    border: 1px solid #009EDB85;
+}
+
+
+#notice01 .news_header {
+    background-color: #C4170C;
+}
+
 #notice01 .item_news_content {
+    border: 1px solid #c4180c85;
+}
+
+#notice01 .news_logo {
+    width: 20px;
+}
+
+.item_news_content {
     font-family: 'Open Sans', sans-serif;
 }
 
-#notice01 .news_header {
+.news_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    background-color: #C4170C;
-    height: 33px;
-}
-
-.news_logo, .news_icon {
-    width: 20px;
+    height: 40px;
 }
 
 .items_news {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+    gap: 100px;
 }
 
 .item_news {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 50px;
+    align-items: center;
+
 }
 
 .item_news_content {
     display: flex;
     flex-direction: column;
-    max-width: 393px;
+    max-width: 396px;
     width: 50%;
-    gap: 20px;
+    transition: .4s;
+    backdrop-filter: blur(1px);
+    border-top: 0px;
+}
+
+.item_news_content:hover {
+    cursor: pointer;
+    transform: none;
+}
+
+.section_news {
+    padding-bottom: 200px;
 }
 
 .item_news_description {
+    font-size: 18px;
+    color: #fff;
     width: 50%;
+    font-weight: 100;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.4;
 }
 
 .news_headline {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 23px 17px;
 }
 
 .news_title {
     line-height: 1.2;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     color: #fff;
 }
 .news_subtitle {
     line-height: 1.2;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     color: #bcbcbc;
 }
 
@@ -260,6 +301,35 @@ body {
     color: #fff;
 }
 
+.link {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-line-color);
+}
+
+.link:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    bottom: 0.1px;
+    left: 0;
+    margin: auto;
+    background-color: var(--secondary-fill-color);
+    width: 10px;
+    height: 2.1px;
+    transition: .3s;
+    opacity: 0.5;
+}
+
+.link:hover{
+    color: var(--secondary-fill-color);
+}
 
 
 
@@ -356,3 +426,88 @@ body {
     
 }
 /* MATERIAS */
+
+/* BENFICIOS */
+    section.benefits {        
+        text-align: center;
+        color: #fff;
+    }
+
+    .benefits_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .benefits_cards .bf_line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .benefits_cards .benefits_card {
+        width: 100%;
+        max-width: 300px;
+    }
+        
+/* BENFICIOS */
+
+/* FOOTER */
+    footer {
+        padding: 40px;
+        background-color: var(--primary-fill-color);
+        box-shadow: -4px -8px 20px 0px rgba(0,0,0,0.75);
+        color: var(--primary-line-color);
+    }
+
+    .benefits_cards .bf_line {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    footer .footer_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    footer .footer_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        gap: 15px;        
+        background-color: var(--tertiary-fill-color);
+        height: 100%;
+        max-height: 600px;
+        box-shadow: 1px -4px 24px 7px rgba(24, 24, 24, 0.75);
+        border-radius: 10px;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    footer .benefits_card img {
+        width: 128px;
+        height: 128px;
+        color: ;
+    }
+
+    footer .ft_memberImage {
+        position: relative; 
+        overflow: hidden; 
+    }
+
+    footer .footer_card img {
+        width: 200px;
+        height: 200px; 
+        vertical-align: middle;
+        border-radius: 100%;
+    }
+
+    
+/* FOOTER */
