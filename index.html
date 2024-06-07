@@ -12,10 +12,17 @@
     <header class="header">
 
         <div class="header_inner container">
-            <div id="logo">
-                <span id="logo1">Aqua</span>
-                <span id="logo2">Byte</span>
-            </div>
+            <nav>
+                <ul class="header_logo">
+                    <a class="" href="#hero">
+                        <div id="logo">
+                            <span id="logo1">Aqua</span>
+                            <span id="logo2">Byte</span>
+                        </div>
+                    </a>
+                </ul>
+            </nav>
+            
             <nav>
                 <ul class="link_items">
                     <li class="link_item"> <a href="#desafios">Desafios</a></li>
@@ -29,7 +36,8 @@
 
 
     </header>
-    <div class="section section_hero">
+
+    <div class="section section_hero" id="hero">
         <div class="section_hero_inner container">
             <div class="hero_title">
                 <span class="hero_title_emphasis">AquaByte:</span> explorando o oceano byte a byte<span class="hero_title_emphasis">.</span>
@@ -123,7 +131,7 @@
 
                     <div class="item_news_description">
                         De acordo com
-                        <a target="_blank" class="link" href="https://g1.globo.com/meio-ambiente/noticia/2022/02/08/poluicao-plastica-afeta-88-das-especies-marinhas-diz-wwf.ghtml">esta notícia</a> 
+                        <a target="_blank" class="link" href="https://news.un.org/pt/story/2017/04/1584141">esta notícia</a> 
                         a pesca ilegal retira 26 milhões de toneladas de peixes do mar anualmente, 
                         prejudicando ecossistemas e economias. A FAO propõe normas internacionais 
                         para combater essa prática.
@@ -164,7 +172,7 @@
                     </div>
 
                     <div class="item_news_description">
-                        <a target="_blank" class="link" href="https://g1.globo.com/meio-ambiente/noticia/2022/02/08/poluicao-plastica-afeta-88-das-especies-marinhas-diz-wwf.ghtml">Esta matéria</a> 
+                        <a target="_blank" class="link" href="https://www.ipcc.ch/2018/10/08/summary-for-policymakers-of-ipcc-special-report-on-global-warming-of-1-5c-approved-by-governments/">Esta matéria</a> 
                         destaca que o relatório especial do IPCC sobre o aquecimento global de 1.5°C 
                         foi aprovado pelos governos em 2018. Ele enfatiza a urgência de limitar o aquecimento global a 1.5°C 
                         e destaca as consequências catastróficas de ultrapassar esse limite. O relatório enfatiza 
@@ -177,147 +185,100 @@
         </div>
     </section>
 
-    <section class="section" id="desafio" style="display: none;">
-        <div class="materias container">
-
-            <div class="glow_bubble bubble_1">
-            
-            </div>
-
-
-            <div class="materias_title">
-                <h1>A saúde dos oceanos está gravemente comprometida</h1>
-            </div>
-
-            <div class="materias_desc">
-                <p>Nossos oceanos estão em perigo. Recifes de corais estão morrendo, espécies marinhas desaparecendo, e a qualidade da água está se deteriorando devido à poluição e às atividades humanas descontroladas. A pesca ilegal e outras atividades prejudiciais em AMPs agravam a situação. Precisamos de ferramentas eficazes para monitorar e proteger nossos oceanos.</p>
-            </div>
-            
-
-            <div id="card_01" class="materia_card">
-                <div class="materia_image">
-   
-                <a
-                    href="https://revistapesquisa.fapesp.br/planeta-plastico/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                <img
-                    src="https://revistapesquisa.fapesp.br/wp-content/uploads/2019/07/018-031_CAPA_Plastico_281-5-mobile.png"
-                    class="d-block w-100"
-                    alt="..."
-                />
-                    </a>
-                </div>
-                <div class="materia_content">
-                    <div class="materia_title">
-                    <p>Lixo despejado nos oceanos</p>
-                    </div>
-
-                    <div class="materia_link">
-                    <p>
-                        A informação de que a cada minuto, o equivalente a um caminhão
-                        de lixo plástico é despejado nos oceanos vem de relatórios de
-                        organizações como a ONU e a Fundação Ellen MacArthur.
-                        <a
-                            class="materia_src"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.ellenmacarthurfoundation.org/the-new-plastics-economy-rethinking-the-future-of-plastics"
-                            >Um estudo de 2016</a
-                        >
-                        pela
-                        <a
-                            class="materia_src"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.ellenmacarthurfoundation.org/the-new-plastics-economy-rethinking-the-future-of-plastics"
-                        >
-                            Fundação Ellen MacArthur
-                        </a>
-                        em parceria com o Fórum Econômico Mundial destacou este dado
-                        alarmante sobre a poluição plástica.
-                        </p>
-                    </div>
-                </div>
-            </div> 
-            <div id="card_02" class="materia_card">
-                <div class="materia_image">
-                    <a href="https://ciclovivo.com.br/planeta/meio-ambiente/preservacao-de-recifes-de-corais-gera-ate-r-167-bilhoes-ao-brasil/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://ciclovivo.com.br/wp-content/uploads/2023/11/recifes-corais-servicos-ecossistemicos-1024x977.webp" alt="Photo by CRIB" title="Recuperar corais pode salvar um dos ecossistemas mais vulneráveis à mudança climática?">
-                    </a>
-                </div>
-                <div class="materia_content">
-                    <div class="materia_title">
-                        Mortes de recifes de corais
-                    </div>
-                    <div class="materia_link">
-                    <p>
-                        De acordo com
-                        <a
-                            class="materia_src"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.ipcc.ch/2018/10/08/summary-for-policymakers-of-ipcc-special-report-on-global-warming-of-1-5c-approved-by-governments/"
-                            >relatórios recentes do Painel Intergovernamental sobre
-                            Mudanças Climáticas (IPCC) </a
-                        >, até 90% dos recifes de coral podem ser perdidos até 2050.
-                        </p>
-                        <br />
-                        <p>
-                        Esses recifes são vitais para o ambiente marinho, abrigando
-                        cerca de 25% de todas as espécies marinhas. Eles fornecem
-                        habitats essenciais, protegem as costas da erosão e sustentam
-                        a pesca e o turismo, que são cruciais para a economia de
-                        muitas comunidades costeiras
-                        </p>
-                    </div>
-                </div>
-            </div> 
-            <div id="card_03" class="materia_card">
-                <div class="materia_image">
-                    <a
-                    href="https://www.brasil247.com/oasis/pesca-selvagem-reservas-marinhas-em-queda-vertical"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        <img
-                            src="https://cdn.brasil247.com/pb-b247gcp/swp/jtjeq9/media/20180703190752_c3463a3c3df725873322b3cb797cb5d11d840b9a220b7ace4e0021b31f9cd6dd.jpeg"
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                    </a>
-                </div>
-                <div class="materia_content">
-                    <div class="materia_title">Pesca Ilegal em AMP's</div>
-                    <div class="materia_link">
-                        <p>
-                        Outro grave problema é a pesca ilegal em Áreas Marinhas
-                        Protegidas (AMPs).
-                        <a
-                            class="materia_src"
-                            href="https://news.un.org/pt/story/2017/04/1584141"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Segundo dados da Organização das Nações Unidas para a
-                            Alimentação (FAO)</a
-                        >, estima-se que até 26 milhões de toneladas de peixes são
-                        capturados ilegalmente a cada ano, prejudicando os esforços de
-                        conservação e ameaçando a sustentabilidade das populações de
-                        peixes.
-                        </p>
-                    </div>
-                </div>
-            </div> 
-        </div>
-   </section>
-
    <section class="section" id="solucao">
         <div class="section_title_wrapper">
             <h2 class="section_title">
-                Solução
+                Drone Subaquático Autônomo
             </h2>
+        </div>
+
+        <div class="section_solution_inner container">
+            <div class="box_presentation">
+                Precisamos de ferramentas eficazes para monitorar e proteger nossos oceanos. 
+                Para isso, desenvolvemos um drone subaquático autônomo equipado com sensores 
+                avançados e câmeras de alta resolução para monitorar a saúde dos recifes 
+                de corais e detectar atividades humanas ilegais em AMPs.
+            </div>
+            <div class="box_solution">
+                <div class="box_product">
+                    <div class="box_product_inner">
+                        <div class="product">
+                            <img src="./img/aquabot.jpg" alt="aquaboat">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box_description">
+                    <div class="box_description_inner">
+                        <div class="items_description">
+                            <input checked type="radio" id="cams" name="bot">
+                            <label class="item_description" for="cams" name="bot">
+    
+                                <div class="item_description_inner">
+                                    <div class="item_description_title">
+                                        Sensores Avançados
+                                    </div>
+                                    <div class="item_description_text">
+                                        Medem pH, salinidade, temperatura, oxigênio dissolvido, turbidez e a presença de poluentes, proporcionando dados ambientais críticos.
+                                    </div>
+                                </div>
+
+                            </label>
+
+                            <input type="radio" id="sensors" name="bot">
+                            <label class="item_description" for="sensors">
+                                <div class="item_description_inner">
+                                    <div class="item_description_title">
+                                        Câmeras de Alta Resolução
+                                    </div>
+                                    <div class="item_description_text">
+                                        Capturam imagens detalhadas da vida marinha, permitindo análises visuais precisas.
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" id="remote" name="bot">
+                            <label class="item_description" for="remote">
+                                <div class="item_description_inner">
+                                    <div class="item_description_title">
+                                        Tecnologia de Sensoriamento Remoto
+                                    </div>
+                                    <div class="item_description_text">
+                                        Detecta atividades humanas suspeitas, como pesca ilegal e tráfego marítimo.
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" id="data" name="bot">
+                            <label class="item_description" for="data">
+                                <div class="item_description_inner">
+                                    <div class="item_description_title">
+                                        Autonomia e Sustentabilidade
+                                    </div>
+                                    <div class="item_description_text">
+                                        Opera autonomamente, convertendo a energia das ondas do mar em eletricidade de maneira eficiente e sustentável.
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="radio" id="analise" name="bot">
+                            <label class="item_description" for="analise">
+                                <div class="item_description_inner">
+                                    <div class="item_description_title">
+                                        Análise de Dados com IA
+                                    </div>
+                                    <div class="item_description_text">
+                                        Identifica padrões de poluição e atividades suspeitas, permitindo intervenções rápidas e informadas.
+                                    </div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
     </section>
 
@@ -325,7 +286,7 @@
        <div class="container">
             <div class="section_title_wrapper">
                 <h2 class="section_title">
-                    Benefícios
+                    Benefícios e Impactos Globais
                 </h2>
             </div>
             <div class="benefits_cards">   
@@ -423,6 +384,26 @@
             </div>
         </div>
    </section>
+
+   <section class="section conclusao" id="conclusao">
+
+        <div class="container">
+            <div class="section_title_wrapper">
+                <h2 class="section_title">
+                    Conclusão
+                </h2>
+            </div>
+
+            <div class="conclusion_text">
+                <p>
+                    Estamos diante de uma oportunidade única para revolucionar a conservação marinha com uma tecnologia inovadora. O drone subaquático autônomo é uma ferramenta poderosa que nos permitirá proteger nossos oceanos de maneira mais eficaz. Junte-se a nós nesta missão vital para garantir a saúde e a sustentabilidade dos nossos mares para as gerações futuras. Seu apoio pode fazer a diferença. Muito obrigado!
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
  
    <section class="section section_team" id="nosso_time">
         <div class="section_title_wrapper">
@@ -450,10 +431,10 @@
                     </div>
                 </div>
 
-                <div class="card_team" id="higor">
+                <div class="card_team" id="luiz">
                     <div class="card_team_inner">
                         <div class="card_team_img">
-                            <img src="./img/higor.png" alt="">
+                            <img src="./img/luiz.png" alt="">
                         </div>
 
                         <div class="card_team_description">
@@ -478,16 +459,16 @@
                                 Higor Alves
                             </div>
                             <div class="card_team_rm">
-                                RM 555965
+                                RM 557633
                             </div>
                         </div>
                         
                     </div>
                 </div>
-                <div class="card_team" id="higor">
+                <div class="card_team" id="guilherme">
                     <div class="card_team_inner">
                         <div class="card_team_img">
-                            <img src="./img/higor.png" alt="">
+                            <img src="./img/gui.png" alt="">
                         </div>
 
                         <div class="card_team_description">
@@ -525,13 +506,17 @@
 
         </div>
    </section>
-
+   
    <footer class="footer">
         <div class="footer-inner container">
-            <div id="logo">                
-                <span id="logo1">Aqua</span>
-                <span id="logo2">Byte</span>
-            </div>
+            <a href="#">
+                <div id="logo">                
+                    <span id="logo1">Aqua</span>
+                    <span id="logo2">Byte</span>
+                </div>
+            </a>
+
+
         </div>
    </footer>
 </body>
